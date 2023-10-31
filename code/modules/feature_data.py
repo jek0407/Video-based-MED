@@ -43,7 +43,7 @@ class FeatureDataset(Dataset):
         feature_path = osp.join(self.feature_dir, f'{vid}.pkl')
         frame_features = np.stack(LoadFeature.load_features(feature_path))
         feature = self.aggregate_frame_features(frame_features)
-        feature = torch.as_tensor(feature, dtype=torch.float)
+        feature = torch.as_tensor(feature, dtype=torch.float).squeeze()
         return feature, label
 
 
