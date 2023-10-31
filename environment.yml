@@ -1,0 +1,17 @@
+name: 11775-hw2
+dependencies:
+  - python=3.9
+  - ffmpeg
+  - autopep8
+  - pip
+  - pip:
+    - torch==1.13
+    - torchvision==0.14
+    - scikit-learn
+    - scipy<1.9.0
+    - pandas
+    - opencv-python>=4.5
+    - pytorch_lightning>=1.5, <2.0
+    - av>=8.0
+    - py-turbo>=0.7
+    - torchmetrics<0.11
